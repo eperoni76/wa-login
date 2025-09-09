@@ -1,0 +1,116 @@
+<div class="container-fluid vh-100">
+  <div class="row h-100">
+    <div class="col-lg-6 d-flex align-items-center justify-content-center bg-light">
+      <div class="login-form-container w-100" style="max-width: 400px;">
+        <div class="text-center mb-4">
+          <h2 class="fw-bold text-primary">Welcome Back</h2>
+          <p class="text-muted">Please sign in to your account</p>
+        </div>
+
+        <form class="needs-validation" novalidate>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <div class="input-group">
+              <span class="input-group-text">
+                <i class="bi bi-envelope"></i>
+              </span>
+              <input 
+                type="email" 
+                class="form-control" 
+                id="email" 
+                placeholder="Enter your email"
+                required
+              >
+              <div class="invalid-feedback">
+                Please provide a valid email address.
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <div class="input-group">
+              <span class="input-group-text">
+                <i class="bi bi-lock"></i>
+              </span>
+              <input 
+                type="password" 
+                class="form-control" 
+                id="password" 
+                placeholder="Enter your password"
+                required
+              >
+              <button 
+                class="btn btn-outline-secondary" 
+                type="button" 
+                id="togglePassword"
+                (click)="togglePasswordVisibility()"
+              >
+                <i class="bi bi-eye" id="toggleIcon"></i>
+              </button>
+              <div class="invalid-feedback">
+                Please provide a valid password.
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="rememberMe">
+            <label class="form-check-label" for="rememberMe">
+              Remember me
+            </label>
+          </div>
+
+          <div class="d-grid mb-3">
+            <button type="submit" class="btn btn-primary btn-lg">
+              <i class="bi bi-box-arrow-in-right me-2"></i>
+              Sign In
+            </button>
+          </div>
+
+          <div class="text-center">
+            <a href="#" class="text-decoration-none">Forgot your password?</a>
+          </div>
+        </form>
+
+        <div class="text-center mt-4">
+          <hr class="my-4">
+          <p class="text-muted">Don't have an account? 
+            <a href="#" class="text-primary text-decoration-none fw-semibold">Sign up here</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right side - Hero Section -->
+    <div class="col-lg-6 d-none d-lg-flex align-items-center justify-content-center bg-primary text-white">
+      <div class="hero-content text-center">
+        <div class="hero-icon mb-4">
+          <i class="bi bi-shield-check" style="font-size: 4rem;"></i>
+        </div>
+        <h1 class="display-4 fw-bold mb-4">Secure Login</h1>
+        <p class="lead mb-4">
+          Access your account safely with our advanced security features and 
+          user-friendly interface designed for your convenience.
+        </p>
+        <div class="features">
+          <div class="row text-center">
+            <div class="col-4">
+              <i class="bi bi-shield-lock mb-2" style="font-size: 2rem;"></i>
+              <p class="small">Secure</p>
+            </div>
+            <div class="col-4">
+              <i class="bi bi-lightning-charge mb-2" style="font-size: 2rem;"></i>
+              <p class="small">Fast</p>
+            </div>
+            <div class="col-4">
+              <i class="bi bi-phone mb-2" style="font-size: 2rem;"></i>
+              <p class="small">Mobile</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
